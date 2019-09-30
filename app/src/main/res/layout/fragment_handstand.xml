@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Handstand">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/txt_handstand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Handstand Pushups"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/star"
+            app:layout_constraintTop_toBottomOf="@id/txt_handstand"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/stars" />
+        <ImageView
+            android:id="@+id/star2"
+            app:layout_constraintTop_toBottomOf="@id/txt_handstand"
+            app:layout_constraintStart_toEndOf="@id/star"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/stars" />
+        <ImageView
+            android:id="@+id/star3"
+            app:layout_constraintTop_toBottomOf="@id/txt_handstand"
+            app:layout_constraintStart_toEndOf="@id/star2"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/stars" />
+        <ImageView
+            android:id="@+id/star4"
+            app:layout_constraintTop_toBottomOf="@id/txt_handstand"
+            app:layout_constraintStart_toEndOf="@id/star3"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/stars" />
+        <ImageView
+            android:id="@+id/star5"
+            app:layout_constraintTop_toBottomOf="@id/txt_handstand"
+            app:layout_constraintStart_toEndOf="@id/star4"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/stars" />
+
+        <TextView
+            android:id="@+id/txt_kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advanced"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txt_handstand"
+            app:layout_constraintStart_toEndOf="@id/star5"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_isi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/handstand"
+            app:layout_constraintTop_toBottomOf="@id/star"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/pesan"
+            app:layout_constraintTop_toBottomOf="@id/txt_isi"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/comment" />
+
+        <TextView
+            android:id="@+id/txt_nominal_pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txt_isi"
+            app:layout_constraintStart_toEndOf="@id/pesan"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/like"
+            app:layout_constraintTop_toBottomOf="@id/txt_isi"
+            app:layout_constraintStart_toEndOf="@id/txt_nominal_pesan"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/like" />
+
+        <TextView
+            android:id="@+id/txt_nominal_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txt_isi"
+            app:layout_constraintStart_toEndOf="@id/like"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/userA"
+            app:layout_constraintTop_toBottomOf="@id/txt_isi"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/usera" />
+
+        <ImageView
+            android:id="@+id/userB"
+            app:layout_constraintTop_toBottomOf="@id/txt_isi"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/userb" />
+
+        <ImageView
+            android:id="@+id/morelike"
+            app:layout_constraintTop_toBottomOf="@id/txt_isi"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/morelike" />
+
+        <TextView
+            android:id="@+id/txt_nominal_morelike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+15"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txt_isi"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.42" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
